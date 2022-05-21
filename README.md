@@ -31,17 +31,7 @@ in myAuth Library
 2.ng build
 in application:
 1.npm install "C:\Users\rojin\myAuth\dist\auth-lib"    
-2.add module and services in appModue
-import { JwtHelperService, JWT_OPTIONS } from '@auth0/angular-jwt';
-import { AuthLibModule, AuthService, httpService } from 'auth-lib';
-  imports: [
-    AuthLibModule
-  ],
-  providers: [
-    JwtHelperService
-   , httpService, AuthService
-  ],
-  
-  3.in angular.json -> "build"->"options" add
+2.add AuthLibModule and services in providers section in appModule
+3.in angular.json -> "build"->"options" add
                         "preserveSymlinks": true,
 
